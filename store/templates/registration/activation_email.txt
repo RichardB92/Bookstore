@@ -1,0 +1,9 @@
+greeting
+
+You just signed up for and account at {{ site.name }}, please click the link below to activate it
+
+http://{{ site.domain }}{% url 'registration_activate' activation_key %}
+
+this link is valid for {{ expiration_days }}. if it wasn't you that signed up, dont worry and ignore the email
+
+-mystery books team
