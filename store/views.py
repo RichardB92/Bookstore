@@ -8,8 +8,7 @@ def store(request):
 	books = Book.objects.all()
 	context = {
 		'books': books,
-	}
-	
+	}	
 	return render(request, 'base.html', context)
 	
 def book_details(request, book_id):
